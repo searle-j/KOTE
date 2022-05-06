@@ -3,8 +3,9 @@
 ## paper
 
 ## dataset
-- 다양한 플랫폼에서 수집한 50,000개의 댓글 (250,000 케이스) 에 44개 정서로 레이블링한 데이터셋.
-    * ['불평/불만',
+- 다양한 플랫폼에서 수집한 50,000개의 댓글에 44개 정서로 레이블링한 데이터셋.
+    * 한 댓글 당 5명이 레이블링 --> 25만 케이스
+    * 정서 레이블 종류 ['불평/불만',
  '환영/호의',
  '감동/감탄',
  '지긋지긋',
@@ -49,7 +50,7 @@
  '기쁨',
  '안심/신뢰']
 
-- [이것 저것 해 보기 좋은 raw data](https://huggingface.co/datasets/searle-j/kote/blob/main/raw.json)
+- 이것 저것 해 보기 좋은 25만 케이스에 관한 raw data: [raw data](https://huggingface.co/datasets/searle-j/kote/blob/main/raw.json)
 
 ## Huggingface
 How to use its Huggingface model.
