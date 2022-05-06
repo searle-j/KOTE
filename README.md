@@ -49,6 +49,9 @@
  '불안/걱정',
  '기쁨',
  '안심/신뢰']
+ 
+- huggingface datasets으로 데이터셋 다운로드
+
 
 - 이것 저것 해 보기 좋은 25만 케이스에 관한 raw data: [raw data](https://huggingface.co/datasets/searle-j/kote/blob/main/raw.json)
 
