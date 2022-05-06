@@ -50,7 +50,7 @@
  '기쁨',
  '안심/신뢰']
  
-- huggingface datasets으로 데이터셋 다운로드
+- huggingface datasets으로 데이터셋 내려받기
 ```python
 from datasets import load_dataset
 
@@ -77,8 +77,8 @@ DatasetDict({
 - 이것 저것 해 보기 좋은 25만 케이스에 관한 raw data: [raw.json](https://huggingface.co/datasets/searle-j/kote/blob/main/raw.json)
 
 ## Huggingface
-How to use its Huggingface model.
+- 논문에 사용한 pytorch lightning으로 학습시킨 버전
+    * 논문에 사용한 weights가 담겨 있는 바이너리 파일:
 
-## requirements
-
-## training
+- 귀찮은 사람들을 위한 huggingface trainer 버전
+    * huggingface 디폴트를 사용해서 pytorch_lightning 버전과 파라미터와 아키텍쳐가 약간 다릅니다. 성능도 약간 낮습니다. (macro F1: 0.56 vs 0.55)
