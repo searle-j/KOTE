@@ -87,11 +87,11 @@ model = AutoModelForSequenceClassification.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 pipe = TextClassificationPipeline(
-        model = model,
-        tokenizer = tokenizer,
-        device = 0, # gpu number, -1 if cpu used
-        return_all_scores = True,
-        function_to_apply = 'sigmoid'
+        model=model,
+        tokenizer=tokenizer,
+        device=0, # gpu number, -1 if cpu used
+        return_all_scores=True,
+        function_to_apply='sigmoid'
     )
 
 for output in pipe("""재미있어요! 재미는 확실히 있는데 뭐랄까... 너무 정신 없달까...ㅋㅋ""")[0]:
