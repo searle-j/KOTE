@@ -49,7 +49,7 @@
  '기쁨',
  '안심/신뢰']
 
-- 이것 저것 해 보기 좋은 raw data: https://huggingface.co/datasets/searle-j/kote/blob/main/raw.json
+- [이것 저것 해 보기 좋은 raw data](https://huggingface.co/datasets/searle-j/kote/blob/main/raw.json)
 
 ## Huggingface
 How to use its Huggingface model.
