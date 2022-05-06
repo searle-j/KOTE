@@ -51,7 +51,7 @@
  '안심/신뢰']
  
 - huggingface datasets으로 데이터셋 다운로드
-```
+```python
 from datasets import load_dataset
 
 dataset = load_dataset("searle-j/kote")
