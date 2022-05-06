@@ -51,7 +51,28 @@
  '안심/신뢰']
  
 - huggingface datasets으로 데이터셋 다운로드
+```
+from datasets import load_dataset
 
+dataset = load_dataset("searle-j/kote")
+print(dataset)
+
+# output
+DatasetDict({
+    train: Dataset({
+        features: ['ID', 'text', 'labels'],
+        num_rows: 40000
+    })
+    test: Dataset({
+        features: ['ID', 'text', 'labels'],
+        num_rows: 5000
+    })
+    validation: Dataset({
+        features: ['ID', 'text', 'labels'],
+        num_rows: 5000
+    })
+})
+```
 
 - 이것 저것 해 보기 좋은 25만 케이스에 관한 raw data: [raw.json](https://huggingface.co/datasets/searle-j/kote/blob/main/raw.json)
 
