@@ -1,6 +1,7 @@
 # KOTE (Korean Online That-gul Emotions) Dataset
 
 ## paper
+https://arxiv.org/pdf/2205.05300.pdf
 
 ## dataset
 - 다양한 플랫폼에서 수집한 50,000개의 댓글에 44개 정서로 레이블링한 데이터셋.
