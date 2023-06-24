@@ -108,9 +108,6 @@ for output in pipe("""재미있어요! 재미는 확실히 있는데 뭐랄까..
 ```
 
 - 꼼꼼한 사람들을 위한 pytorch lightning 논문 버전
-    * ---------------------------------------------------------------------------------------------------------------
-    * [해당 이슈](https://github.com/searle-j/KOTE/issues/3)로 작동하지 않을 수 있습니다. 곧 업데이트하도록 하겠습니다.
-    * ---------------------------------------------------------------------------------------------------------------
     * 논문에 사용한 weights가 담겨 있는 바이너리 파일: [kote_pytorch_lightning.bin](https://huggingface.co/searle-j/kote_for_meticulous_people/blob/main/kote_pytorch_lightning.bin)
     * 내려받은 이후에 파일 이름을 {파일_이름}, 확장자는 bin으로 설정해 주세요. --> {파일_이름}.bin
     * 돌려보기
@@ -170,8 +167,8 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 class KOTEtagger(pl.LightningModule):
     def __init__(self):
         super().__init__()
-        self.electra = ElectraModel.from_pretrained("beomi/KcELECTRA-base").to(device)
-        self.tokenizer = AutoTokenizer.from_pretrained("beomi/KcELECTRA-base")
+        self.electra = ElectraModel.from_pretrained("beomi/KcELECTRA-base", revision='v2021').to(device)
+        self.tokenizer = AutoTokenizer.from_pretrained("beomi/KcELECTRA-base", revision='v2021')
         self.classifier = nn.Linear(self.electra.config.hidden_size, 44).to(device)
         
     def forward(self, text:str):
